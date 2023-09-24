@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.content-main {
+  color: black;
+  max-height: 100vh;
+}
+
+.content-main-mobile{
+  color: black;
+  /* max-height: 100vh; */
+
+}
+.footer-main {
+  background-color: #0f0b18;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.athletes-image-mobile{
+  /* position: absolute;
+  z-index: 9999; */
+
+  max-width: 70%;
+  width: auto;
+  max-height: 826px;
+  height: auto;
+}
+
+.athletes-image {
+  position: absolute;
+  z-index: 9999;
+  max-width: 40%;
+  width: auto;
+  max-height: 826px;
+  height: auto;
+}
+
+.player-image {
+  position: absolute;
+  z-index: 9999;
+  max-width: 40%;
+  width: auto;
+  height: auto;
+}
+
+.player-image-mobile{
+  max-width: 100%;
+  width: auto;
+  max-height: 826px;
+  height: auto;
+}
+
+/* @media screen and (min-width: 768px) {
+  .player-image {
+    position: absolute;
+    z-index: 9999;
+    max-width: 50%;
+    width: auto;
+    height: auto;
+  }
+} */
+
+.section-one-mobile{
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.section-two-mobile{
+  /* background-color: #f5f4f9; */
+  /* background-color: red; */
+  /* height: 256px;
+  max-width: 100%; */
+}
+.section-one {
+  background-color: white;
+  max-width: 100%;
+}
+.section-two {
+  background-color: #f5f4f9;
+  height: 256px;
+  max-width: 100%;
+}
+.section-three {
+  background-color: #5e3db3;
+  height: 297px;
+  max-width: 100%;
+}
+.player-section-one {
+  background-color: white;
+  max-width: 100%;
+  margin-top: 55px;
+}
+.player-section-two {
+  background-color: #f5f4f9;
+  height: 256px;
+  max-width: 100%;
+}
+.player-section-three {
+  background: #090c35;
+  height: 240px;
+  max-width: 100%;
+}
+
+.font-size-header-other{
+  color: #e7e7e7;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-size-header {
+  color: #e7e7e7;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-size-title {
+  color: #c2c2c2;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+
+.font-size-content {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.font-size-content-other {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.font-size-number {
+  position: relative;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+
+.font-size-number::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 14px;
+  width: 100%;
+  height: 5px;
+  background-color: #603ebe;
+  border-radius: 2.5px;
+}
+
+.font-size-number-other {
+  position: relative;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+
+.font-size-number-other::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 14px;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2.5px;
+}
+
+.athlets-content {
+  padding-bottom: 10px;
+}
+
+
+/* CSS for slideShow */
+
+.slideshow-container {
+  position: relative;
+  background: #F5F4F9;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  /* background: #ddd; */
+  background: #F5F4F9;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #5C3CAF;
+}
+
+
+/* css for slideShowPlayer */
+
+.slideshow-container-other {
+  position: relative;
+  background: #F5F4F9;
+}
+
+.mySlides-other {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.dot-container-other {
+  text-align: center;
+  padding: 20px;
+  /* background: #ddd; */
+  background: #F5F4F9;
+}
+
+.dot-other {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot-other:hover {
+  background-color: #5C3CAF;
+}
